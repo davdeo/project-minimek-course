@@ -1,5 +1,6 @@
 import thunk from 'redux-thunk';
-import { applyMiddleware, compose, createStore, Store, StoreEnhancer } from 'redux';
+import { applyMiddleware, createStore, Store, StoreEnhancer } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import { rootReducer, State } from '../reducers/root-reducer';
 
 export function configureStore(preloadedState?: State): Store<State> {
@@ -8,7 +9,7 @@ export function configureStore(preloadedState?: State): Store<State> {
 
     const storeEnhancers = [middlewareEnhancer];
 
-    const composedEnhancer: StoreEnhancer<Store> = compose(...storeEnhancers);
+    const composedEnhancer: StoreEnhancer = composeWithDevTools(...storeEnhancers);
 
     return createStore(rootReducer, preloadedState, composedEnhancer);
 }
