@@ -38,6 +38,7 @@
                 "allowExpressions": true
             }
         ],
-        "jsx-a11y/anchor-is-valid": "warn"
+        "jsx-a11y/anchor-is-valid": "warn",
+        "@typescript-eslint/default-param-last": "off"
     }
 }
