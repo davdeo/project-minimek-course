@@ -1,12 +1,17 @@
 import React, { FunctionComponent } from 'react';
-import './style.css';
-import SampleComponent from '../../components/sample-component';
+import { AppBar, CssBaseline, Toolbar, Typography } from '@mui/material';
 
 export const App: FunctionComponent = () => (
-    <div className="app">
-        <div className="app-header">
-            <h2>Project Mini-Mek</h2>
+    <>
+        <CssBaseline />
+        <div className="app">
+            <AppBar position="static">
+                <Toolbar variant="regular">
+                    <Typography variant="h6" color="inherit" component="div">
+                        Project Mini-Mek
+                    </Typography>
+                </Toolbar>
+            </AppBar>
         </div>
-        <SampleComponent />
-    </div>
+    </>
 );

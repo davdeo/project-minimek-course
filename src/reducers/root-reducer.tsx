@@ -1,10 +1,6 @@
 import { combineReducers } from 'redux';
-import { testReducer, TestReducerState } from './testReducer';
 
-export interface State {
-    testReducer: TestReducerState;
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface State {}
 
-export const rootReducer = combineReducers({
-    testReducer
-});
+export const rootReducer = combineReducers({});

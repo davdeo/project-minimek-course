@@ -13,7 +13,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'React Boilerplate',
+            title: 'Project Mini-Mek',
             template: path.resolve(__dirname, 'src', 'index.html')
         })
     ],
