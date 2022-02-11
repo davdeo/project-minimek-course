@@ -3,12 +3,17 @@ import { AppBar, CssBaseline, Toolbar, Typography } from '@mui/material';
 import { TabDataModel } from '../../models';
 import { TabBarContainer } from '../../components';
 
+const UnitInfo: React.FunctionComponent = () => <div>Unit Info content</div>;
+const Pilots: React.FunctionComponent = () => <div>Pilots content</div>;
+const Mechs: React.FunctionComponent = () => <div>Mechs content</div>;
+const UnitOrganization: React.FunctionComponent = () => <div>Unit Organization content</div>;
+
 export const App: FunctionComponent = () => {
     const tabs: TabDataModel[] = [
-        { name: 'unitInfo', label: 'Unit Info' },
-        { name: 'pilots', label: 'Pilots' },
-        { name: 'mechs', label: 'Mechs' },
-        { name: 'unitOrganization', label: 'Unit Organization' }
+        { name: 'unitInfo', label: 'Unit Info', component: UnitInfo },
+        { name: 'pilots', label: 'Pilots', component: Pilots },
+        { name: 'mechs', label: 'Mechs', component: Mechs },
+        { name: 'unitOrganization', label: 'Unit Organization', component: UnitOrganization }
     ];
 
     return (
