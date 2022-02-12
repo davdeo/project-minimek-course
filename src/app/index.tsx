@@ -1,12 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { AppBar, CssBaseline, Toolbar, Typography } from '@mui/material';
 import { TabDataModel } from '../models';
-import { TabBarContainer } from '../feature';
-
-const UnitInfo: React.FunctionComponent = () => <div>Unit Info content</div>;
-const Pilots: React.FunctionComponent = () => <div>Pilots content</div>;
-const Mechs: React.FunctionComponent = () => <div>Mechs content</div>;
-const UnitOrganization: React.FunctionComponent = () => <div>Unit Organization content</div>;
+import { Mechs, Pilots, TabBarContainer, UnitInfo, UnitOrganization } from '../feature';
 
 export const App: FunctionComponent = () => {
     const tabs: TabDataModel[] = [
