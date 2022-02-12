@@ -1,4 +1,4 @@
-import { Box, Tab, Tabs } from '@mui/material';
+import { Box, Container, Tab, Tabs } from '@mui/material';
 import React from 'react';
 import { TabDataModel } from '../../models';
 import { ToggleDisplay } from '../../common';
@@ -24,12 +24,12 @@ export const TabBar: React.FunctionComponent<Props> = ({ tabs, activeTab, onTabC
 
     return (
         <div>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider', marginBottom: '20px' }}>
                 <Tabs value={activeTab} onChange={onTabClick}>
                     {tabItems}
                 </Tabs>
             </Box>
-            {tabPanels}
+            <Container>{tabPanels}</Container>
         </div>
     );
 };
