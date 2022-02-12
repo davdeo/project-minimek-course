@@ -1,7 +1,7 @@
 import { Box, Tab, Tabs } from '@mui/material';
 import React from 'react';
 import { TabDataModel } from '../../models';
-import { ToggleDisplay } from '../toggle-display';
+import { ToggleDisplay } from '../../common';
 
 interface Props {
     tabs: TabDataModel[];
