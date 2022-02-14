@@ -1,3 +1,4 @@
 import React from 'react';
+import { Pilots } from './pilots';
 
-export const Pilots: React.FunctionComponent = () => <div>Pilots content</div>;
+export const PilotsContainer: React.FunctionComponent = () => <Pilots />;
