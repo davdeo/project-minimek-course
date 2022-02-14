@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import { AppBar, CssBaseline, Toolbar, Typography } from '@mui/material';
 import { TabDataModel } from '../models';
-import { Mechs, PilotsContainer, TabBarContainer, UnitInfoContainer, UnitOrganization } from '../feature';
+import { MechsContainer, PilotsContainer, TabBarContainer, UnitInfoContainer, UnitOrganization } from '../feature';
 
 export const App: FunctionComponent = () => {
     const tabs: TabDataModel[] = [
         { name: 'unitInfo', label: 'Unit Info', component: UnitInfoContainer },
         { name: 'pilots', label: 'Pilots', component: PilotsContainer },
-        { name: 'mechs', label: 'Mechs', component: Mechs },
+        { name: 'mechs', label: 'Mechs', component: MechsContainer },
         { name: 'unitOrganization', label: 'Unit Organization', component: UnitOrganization }
     ];
 
