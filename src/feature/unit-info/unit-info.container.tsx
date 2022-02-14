@@ -1,3 +1,4 @@
 import React from 'react';
+import { UnitInfo } from './unit-info';
 
-export const UnitInfo: React.FunctionComponent = () => <div>Unit Info content</div>;
+export const UnitInfoContainer: React.FunctionComponent = () => <UnitInfo />;
