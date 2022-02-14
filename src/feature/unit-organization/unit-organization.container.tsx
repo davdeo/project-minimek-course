@@ -1,3 +1,4 @@
 import React from 'react';
+import { UnitOrganization } from './unit-organization';
 
-export const UnitOrganization: React.FunctionComponent = () => <div>Unit Organization content</div>;
+export const UnitOrganizationContainer: React.FunctionComponent = () => <UnitOrganization />;
