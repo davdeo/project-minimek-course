@@ -1,13 +1,22 @@
 import { Box, Tab, Tabs } from '@mui/material';
 import React from 'react';
-import { TabDataModel } from '../../models';
-import { ToggleDisplay } from '../../common';
+import { TabDataModel } from '../../models/tab-data.model';
+import { ToggleDisplay } from '../../common/components/toggle-display';
+import { TabName } from '../../enums/tab-name.enum';
 
-interface Props {
-    tabs: TabDataModel[];
-    activeTab: string;
-    onTabClick: (event: React.SyntheticEvent, tabValue: string) => void;
+export interface TabBarStateProps {
+    activeTab: TabName;
 }
+
+export interface TabBarDispatchProps {
+    onTabClick: (tabValue: TabName) => void;
+}
+
+interface OwnProps {
+    tabs: TabDataModel[];
+}
+
+type Props = TabBarStateProps & TabBarDispatchProps & OwnProps;
 
 export const TabBar: React.FunctionComponent<Props> = ({ tabs, activeTab, onTabClick }: Props) => {
     const tabItems = tabs.map((tabData) => <Tab value={tabData.name} label={tabData.label} />);
@@ -25,7 +34,7 @@ export const TabBar: React.FunctionComponent<Props> = ({ tabs, activeTab, onTabC
     return (
         <div>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <Tabs value={activeTab} onChange={onTabClick}>
+                <Tabs value={activeTab} onChange={(event, tabValue: TabName): void => onTabClick(tabValue)}>
                     {tabItems}
                 </Tabs>
             </Box>

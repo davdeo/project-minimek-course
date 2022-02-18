@@ -1,20 +1,20 @@
 import React, { FunctionComponent } from 'react';
 import { AppBar, CssBaseline, Toolbar, Typography } from '@mui/material';
-import { TabDataModel } from '../models';
-import {
-    MechsContainer,
-    PilotsContainer,
-    TabBarContainer,
-    UnitInfoContainer,
-    UnitOrganizationContainer
-} from '../feature';
+import { TabDataModel } from '../models/tab-data.model';
+
+import { TabName } from '../enums/tab-name.enum';
+import { UnitInfoContainer } from '../feature/unit-info/unit-info.container';
+import { PilotsContainer } from '../feature/pilots/pilots.container';
+import { MechsContainer } from '../feature/mechs/mechs.container';
+import { UnitOrganizationContainer } from '../feature/unit-organization/unit-organization.container';
+import { TabBarContainer } from '../feature/tab-bar/tab-bar.container';
 
 export const App: FunctionComponent = () => {
     const tabs: TabDataModel[] = [
-        { name: 'unitInfo', label: 'Unit Info', component: UnitInfoContainer },
-        { name: 'pilots', label: 'Pilots', component: PilotsContainer },
-        { name: 'mechs', label: 'Mechs', component: MechsContainer },
-        { name: 'unitOrganization', label: 'Unit Organization', component: UnitOrganizationContainer }
+        { name: TabName.UNIT_INFO, label: 'Unit Info', component: UnitInfoContainer },
+        { name: TabName.POLOTS, label: 'Pilots', component: PilotsContainer },
+        { name: TabName.MECHS, label: 'Mechs', component: MechsContainer },
+        { name: TabName.UNIT_ORGANIZATION, label: 'Unit Organization', component: UnitOrganizationContainer }
     ];
 
     return (
