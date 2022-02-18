@@ -23,7 +23,17 @@ module.exports = {
         static: './dist'
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js']
+        alias: {
+            '@app': '/src/app',
+            '@assets': '/src/assets',
+            '@common': '/src/common',
+            '@enums': '/src/enums',
+            '@feature': '/src/feature',
+            '@models': '/src/models',
+            '@reducer': '/src/reducer',
+            '@store': '/src/store',
+        },
+        extensions: ['.tsx', '.ts', '.js', '.json']
     },
     module: {
         rules: [

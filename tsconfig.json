@@ -18,8 +18,19 @@
         "strictNullChecks": true,
         "strictPropertyInitialization": true,
         "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@app/*": ["app/*"],
+            "@assets/*": ["assets/*"],
+            "@common/*": ["common/*"],
+            "@enums/*": ["enums/*"],
+            "@feature/*": ["feature/*"],
+            "@models/*": ["models/*"],
+            "@reducer/*": ["reducer/*"],
+            "@store/*": ["store/*"],
+        }
     },
-    "include": ["src/**/*"],
+    "include": ["src"],
     "exclude": ["node_modules"]
 }
