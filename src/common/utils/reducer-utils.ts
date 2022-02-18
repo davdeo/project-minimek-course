@@ -1,4 +1,4 @@
-import { Action } from '../../models/action.model';
+import { Action } from '@models/action.model';
 
 export function createReducer<ReducerState>(
     initialState: ReducerState,

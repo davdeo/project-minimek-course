@@ -1,6 +1,6 @@
-import React from 'react';
-import { TreeItem, TreeView } from '@mui/lab';
 import { Apps, GridView, Person } from '@mui/icons-material';
+import { TreeItem, TreeView } from '@mui/lab';
+import React from 'react';
 
 export const UnitOrganization: React.FunctionComponent = () => {
     const unitOrganisationData = {

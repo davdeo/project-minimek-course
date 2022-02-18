@@ -1,6 +1,6 @@
+import { createReducer } from '@common/utils/reducer-utils';
+import { TabName } from '@enums/tab-name.enum';
 import { TabBarActions } from './tab-bar.actions';
-import { createReducer } from '../../common/utils/reducer-utils';
-import { TabName } from '../../enums/tab-name.enum';
 
 const INITIAL_STATE = {
     currentTab: TabName.UNIT_INFO

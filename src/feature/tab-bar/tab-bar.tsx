@@ -1,8 +1,8 @@
+import { ToggleDisplay } from '@common/components/toggle-display';
+import { TabName } from '@enums/tab-name.enum';
+import { TabDataModel } from '@models/tab-data.model';
 import { Box, Tab, Tabs } from '@mui/material';
 import React from 'react';
-import { TabDataModel } from '../../models/tab-data.model';
-import { ToggleDisplay } from '../../common/components/toggle-display';
-import { TabName } from '../../enums/tab-name.enum';
 
 export interface TabBarStateProps {
     activeTab: TabName;

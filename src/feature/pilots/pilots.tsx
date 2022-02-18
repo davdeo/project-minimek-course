@@ -1,4 +1,3 @@
-import React from 'react';
 import {
     Box,
     FormControl,
@@ -17,6 +16,7 @@ import {
     TextField,
     Typography
 } from '@mui/material';
+import React from 'react';
 
 const RANKS = [
     { value: 'Private', text: 'Private' },

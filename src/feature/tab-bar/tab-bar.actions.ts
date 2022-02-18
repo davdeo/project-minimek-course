@@ -1,4 +1,4 @@
-import { TabName } from '../../enums/tab-name.enum';
+import { TabName } from '@enums/tab-name.enum';
 
 export namespace TabBarActions {
     export enum ActionTypes {

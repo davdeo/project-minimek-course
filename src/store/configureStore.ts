@@ -1,8 +1,8 @@
-import thunk from 'redux-thunk';
+import { State } from '@models/state.model';
+import { rootReducer } from '@reducer/root-reducer';
 import { applyMiddleware, createStore, Store, StoreEnhancer } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
-import { rootReducer } from '../reducer/root-reducer';
-import { State } from '../models/state.model';
+import thunk from 'redux-thunk';
 
 export function configureStore(preloadedState?: State): Store<State> {
     const middlewares = [thunk];

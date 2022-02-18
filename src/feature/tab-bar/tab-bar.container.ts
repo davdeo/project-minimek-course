@@ -1,7 +1,7 @@
+import { State } from '@models/state.model';
 import { connect } from 'react-redux';
-import { TabBarActions } from './tab-bar.actions';
 import { TabBar, TabBarStateProps } from './tab-bar';
-import { State } from '../../models/state.model';
+import { TabBarActions } from './tab-bar.actions';
 
 const mapState = (state: State): TabBarStateProps => {
     return {

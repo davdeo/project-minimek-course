@@ -1,13 +1,12 @@
-import React, { FunctionComponent } from 'react';
+import { TabName } from '@enums/tab-name.enum';
+import { MechsContainer } from '@feature/mechs/mechs.container';
+import { PilotsContainer } from '@feature/pilots/pilots.container';
+import { TabBarContainer } from '@feature/tab-bar/tab-bar.container';
+import { UnitInfoContainer } from '@feature/unit-info/unit-info.container';
+import { UnitOrganizationContainer } from '@feature/unit-organization/unit-organization.container';
+import { TabDataModel } from '@models/tab-data.model';
 import { AppBar, CssBaseline, Toolbar, Typography } from '@mui/material';
-import { TabDataModel } from '../models/tab-data.model';
-
-import { TabName } from '../enums/tab-name.enum';
-import { UnitInfoContainer } from '../feature/unit-info/unit-info.container';
-import { PilotsContainer } from '../feature/pilots/pilots.container';
-import { MechsContainer } from '../feature/mechs/mechs.container';
-import { UnitOrganizationContainer } from '../feature/unit-organization/unit-organization.container';
-import { TabBarContainer } from '../feature/tab-bar/tab-bar.container';
+import React, { FunctionComponent } from 'react';
 
 export const App: FunctionComponent = () => {
     const tabs: TabDataModel[] = [

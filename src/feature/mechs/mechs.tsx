@@ -1,4 +1,3 @@
-import React from 'react';
 import {
     Box,
     FormControl,
@@ -14,6 +13,7 @@ import {
     TextField,
     Typography
 } from '@mui/material';
+import React from 'react';
 
 export const Mechs: React.FunctionComponent = () => {
     const mech1 = { id: 1, name: 'Warhammer', model: 'WHM-6R', weight: 70, class: 'Heavy' };

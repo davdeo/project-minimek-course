@@ -1,5 +1,5 @@
-import React from 'react';
 import { FormControl, FormGroup, InputLabel, MenuItem, Select, TextField } from '@mui/material';
+import React from 'react';
 
 const FACTIONS = [
     { value: 'cc', text: 'Capellan Confederation' },
