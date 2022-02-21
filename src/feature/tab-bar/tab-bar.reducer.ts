@@ -2,18 +2,18 @@ import { createReducer } from '@common/utils/reducer-utils';
 import { TabName } from '@enums/tab-name.enum';
 import { TabBarActions } from './tab-bar.actions';
 
-const INITIAL_STATE = {
-    currentTab: TabName.UNIT_INFO
+const INITIAL_STATE: TabBarReducerState = {
+    activeTab: TabName.UNIT_INFO
 };
 
 export interface TabBarReducerState {
-    currentTab: TabName;
+    activeTab: TabName;
 }
 
 function selectTab(state: TabBarReducerState, action: TabBarActions.SelectTabAction): TabBarReducerState {
     return {
         ...state,
-        currentTab: action.payload.tabName
+        activeTab: action.payload.tabName
     };
 }
 

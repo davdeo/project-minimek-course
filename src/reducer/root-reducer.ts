@@ -4,5 +4,5 @@ import { State } from '@models/state.model';
 import { combineReducers } from 'redux';
 
 export const rootReducer = combineReducers<State, Action>({
-    tabBarReducer
+    tabBar: tabBarReducer
 });
