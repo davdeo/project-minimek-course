@@ -10,8 +10,6 @@ export namespace TabBarActions {
         payload: { tabName: TabName };
     }
 
-    export type AllActionInterfaces = SelectTabAction;
-
     export const selectTab = (tabName: TabName): SelectTabAction => ({
         type: ActionTypes.SELECT_TAB_ACTION,
         payload: { tabName }
